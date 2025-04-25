@@ -19,8 +19,10 @@ jobs:
               uses: actions/setup-node@v3
               with:
                 node-vesrion: '18'
+
             - name: install dependencies
-              run: npm ci
+              run: npm install
+
             - name: Run Test
               run: npm test
 
